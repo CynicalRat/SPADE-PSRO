@@ -47,9 +47,8 @@ psro-ppo-project
 To set up the project, clone the repository and install the required dependencies:
 
 ```bash
-git clone <repository-url>
-cd psro-ppo-project
-pip install -r requirements.txt
+git clone <https://github.com/CynicalRat/SPADE-PSRO.git>
+pip install -r requirements.txt  # have not finished yet
 ```
 
 ## Usage
@@ -66,8 +65,10 @@ The configuration for the PSRO algorithm can be found in `configs/psro_config.ya
 - **PSRO**: Implemented in `src/algorithms/psro.py`, this class manages the overall PSRO process, including policy evaluation and updating the policy pool.
 - **Oracle**: Implemented in `src/algorithms/ppo_oracle.py`, this class integrates with Stable Baselines3 to provide a PPO-based policy for the PSRO algorithm.
 
+
 ## Environments
 - **Self-Play Wrapper**: Defined in `src/envs/self_play_wrapper.py`, this class manages interactions between the agent and its opponent, supporting self-play.
+- **Game Env**: Defined in `src/envs/gameenv.py`, this class manages the main reconnaissance env based on Orekit.
 
 ## Utilities
 - **Payoff Table**: Managed in `src/utils/payoff_table.py`, this class handles the storage and retrieval of payoff information for different strategies.
