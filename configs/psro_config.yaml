@@ -1,0 +1,5 @@
+oracle_config:
+  timesteps: 10000
+  learning_rate: 0.0003
+  gamma: 0.99
+
